@@ -25,10 +25,7 @@ function submittingForm(evn) {
   evn.preventDefault();
 
   const sentData = JSON.parse(localStorage.getItem(KEY_FEEDBACK));
-
-  console.log(`Email: ${sentData.email}`);
-  console.log(`Message: ${sentData.message}`);
-
+  console.log(sentData);
   evn.currentTarget.reset();
   localStorage.removeItem(KEY_FEEDBACK);
 }
