@@ -39,6 +39,6 @@ function populateFormData() {
 
   if (savedFormData !== '') {
     (emailField.value = savedFormData.email),
-    (textareaField.value = savedFormData.message);
+      (textareaField.value = savedFormData.message);
   }
 }
